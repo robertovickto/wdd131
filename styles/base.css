@@ -14,12 +14,12 @@ body {
 
 }
 
-header 
+header
 
 {
 
     color: white;
-    
+
 }
 
 header span {
@@ -167,7 +167,7 @@ aside h2
 
 }
 
-aside nav
+.resources
 
 {
 
@@ -178,7 +178,7 @@ aside nav
 
 }
 
-aside nav ul
+.resources ul
 
 {
 
@@ -188,7 +188,7 @@ aside nav ul
 
 }
 
-aside nav a
+.resources a
 
 {
 
@@ -197,7 +197,7 @@ aside nav a
     
 }
 
-aside nav a:hover
+.resources a:hover
 
 {
 
