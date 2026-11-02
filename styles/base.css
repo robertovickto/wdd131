@@ -8,7 +8,7 @@ body {
 
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: auto;
     width: 100%;
 
@@ -21,8 +21,7 @@ header
     color: white;
 
 }
-
-header span {
+#course-title {
 
     background-color: #704492;
     display: block;
