@@ -1,0 +1,182 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    width: 100%;
+
+}
+
+header,
+footer {
+
+    background-color: #704492;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+
+
+}
+
+header {
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 2rem 0;
+
+}
+
+header p {
+
+    font-size: 1.5rem;
+
+}
+
+#menu
+
+{
+
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+#menu::before
+
+{
+
+    content: "☰";
+
+}
+
+#menu.open::before
+
+{
+
+    content: "❌";
+
+}
+
+header nav
+
+{
+
+    display: none;
+    width: 100%;
+
+}
+
+header nav.open
+
+{
+
+    display: block;
+
+}
+
+header nav ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem 0 0;
+
+}
+
+header nav ul li {
+
+    list-style: none;
+
+}
+
+header nav a {
+
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+
+header nav a:hover
+
+{
+
+    background-color: white;
+    color: #704492;
+    padding: 1rem;
+
+}
+
+.active::before
+
+{
+
+    content: "📌";
+
+}
+
+main 
+
+{
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+main h1 {
+
+    text-align: center;
+
+}
+
+main div
+
+{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+}
+
+main figure img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+main figure
+
+{
+
+    margin: 0;
+
+}
+
+main figure figcaption {
+
+    text-align: center;
+
+}
+
+footer {
+
+    margin: 2rem 0 0 0;
+    text-align: center;
+
+}

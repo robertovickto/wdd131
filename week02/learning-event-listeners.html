@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Random color example — addEventListener()</title>
+    <style>
+        button {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button>Change color</button>
+
+    <form action="#">
+        <div>
+            <label for="fname">First name: </label>
+            <input id="fname" type="text" />
+        </div>
+        <div>
+            <label for="lname">Last name: </label>
+            <input id="lname" type="text" />
+        </div>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+    </form>
+    <p></p>
+
+    <script>
+
+        const btn = document.querySelector("button");
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function changeBackground() {
+            const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.addEventListener("click", changeBackground);
+
+        // btn.removeEventListener("click", changeBackground);
+
+        const form = document.querySelector("form");
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const para = document.querySelector("p");
+
+        form.addEventListener("submit", (e) => {
+            if (fname.value === "" || lname.value === "") {
+            e.preventDefault();
+            para.textContent = "You need to fill in both names!";
+                }
+            });
+
+    </script>
+
+</body>
+
+</html>
