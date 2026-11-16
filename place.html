@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> My country, Nigeria </title>
+
+    <meta name="author" content="Roberto Vickto">
+
+    <meta name="description" content="An image showing a Nigerian city, some facts about this beautiful place, anf the weather information.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer> </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1> My Country - Nigeria </h1>
+
+    </header>
+
+    <main>
+
+        <picture>
+
+            <source srcset="images/place-hero-wide.webp" media="(min-width: 1500px)">
+
+            <source srcset="images/place-hero-medium.webp" media="(min-width: 1000px)">
+
+            <img src="images/place-hero-small.webp" alt="Aerial view of Lagos City, showing the Civic Tower in Lekki, and the Lagos lagoon.">
+
+        </picture>
+
+        <section class="data">
+
+            <h2> Data </h2>
+
+            <ul>
+
+                <li> <strong> Area: </strong> 923,769 sq Km </li>
+
+                <li> <strong> Population: </strong> 242,000,000 </li>
+
+                <li> <strong> Capital: </strong> FCT, Abuja </li>
+
+                <li> <strong> Official Language: </strong> English </li>
+
+                <li> <strong> Currency: </strong> Nigerian Naira </li>
+
+                <li> <strong> Time Zone: </strong> UTC + 1 </li>
+
+                <li> <strong> Calling Code: </strong> +234 </li>
+
+                <li> <strong> InternetTLD: </strong> .ng </li>
+
+            </ul>
+
+        </section>
+
+        <section class="weather">
+
+            <h2> Weather </h2>
+
+            <img src="images/weather-icon.svg" alt="A cloudy weather icon">
+
+            <ul>
+
+                <li> <strong> Temperature: </strong> 10&deg;C  </li>
+
+                <li> <strong> Conditions: </strong> Cloudy </li>
+
+                <li> <strong> Wind: </strong> 5 Km/h </li>
+
+                <li> <strong> Wind Chill: </strong> <span id="wind-chill"> </span> </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p> &copy; <span id="currentyear"> </span> | ROBERTO VICKTO | ABUJA, NIGERIA | </p>
+                
+        <p> Last Modified: <span id="lastModified"> </span> </p>
+
+    </footer>
+    
+</body>
+
+</html>

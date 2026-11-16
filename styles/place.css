@@ -1,0 +1,232 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+:root {
+
+    --bg-color: #005a36;
+    --omni-padding: 1rem;
+    --heading-color: #005a36;
+}
+
+header,
+main,
+footer {
+
+    max-width: 750px;
+    margin: 0 auto;
+
+}
+
+header,
+footer {
+
+    background-color: var(--bg-color);
+    padding: calc(var(--omni-padding) * 2);
+
+}
+
+h1 {
+
+    background-color: #f0f8f4;
+    border-radius: 5px;
+    color: var(--heading-color);
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+
+}
+
+h2 {
+
+    color: var(--heading-color);
+    padding: var(--omni-padding);
+    text-align: center;
+
+}
+
+picture img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+main {
+
+    background-color: #f0f8f4;
+    min-height: 500px;
+
+}
+
+main section {
+
+    padding: var(--omni-padding);
+
+}
+
+main section ul {
+
+    text-align: center;
+
+}
+
+main section ul li {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+main section ul li strong {
+
+    width: 50%;
+    text-align: right;
+    padding-right: calc(var(--omni-padding));
+    white-space: nowrap;
+
+}
+
+main section img {
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: var(--omni-padding);
+
+}
+
+footer {
+
+    margin-top: var(--omni-padding);
+    text-align: center;
+    color: #f0f8f4;
+    font-weight: 600;
+
+}
+
+@media screen and (min-width:755px) 
+
+{
+
+    header, main, footer
+
+    {
+
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    main 
+    
+    {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    picture
+
+    {
+
+        grid-column: 1 / 3;
+
+    }
+
+    .data
+
+    {
+
+        grid-column: 1 / 2;
+
+    }
+
+    .weather
+
+    {
+
+        grid-column: 2 / 3;
+
+    }
+
+}
+
+@media screen and (min-width:1500px)
+
+{
+
+    header, main, footer 
+
+    {
+
+        max-width: 1500px;
+        width: 100%;
+
+    }
+
+    main
+
+    {
+
+        position: relative;
+
+    }
+
+    .data
+
+    {
+
+        background-color: rgba(240, 248, 244, 80%);
+        left: 5px;
+        position: absolute;
+        top: 5px;
+        width:80%;
+
+    }
+
+    .weather
+
+    {
+
+        background-color: rgba(240, 248, 244, 80%);
+        bottom: 10px;
+        position: absolute;
+        right: 5px;
+        width: 80%;
+
+    }
+
+    .weather img 
+
+    {
+
+        display: none;
+
+    }
+
+    
+    h2 
+
+    {
+
+        background-color: var(--heading-color);
+        border-radius: 5px;
+        color: #f0f8f4;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .weather h2::after
+
+    {
+
+        content: "☁️";
+
+    }
+
+}
